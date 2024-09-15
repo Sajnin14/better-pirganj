@@ -18,6 +18,22 @@
         .font{
             font-family: "Roboto", sans-serif;
         }
+        
+        .hero-title{
+            background: linear-gradient(to right, #762B90, #762B90, #F2904f, #D91B5B );
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+        /* .purple{
+            color:#762B90;}
+
+        .orange{
+            color: #F2904F;
+        }
+
+        .reddish{
+            color: #D91B5B;
+        } */
     </style>
     <!-- customized tailwind -->
     <script>
@@ -26,6 +42,9 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'beguni': '#762B90',
+                'komola': '#F2904F',
+                'reddis': '#D91B5B',
               }
             }
           }
@@ -33,12 +52,92 @@
       </script>
 </head>
 <body>
-    <header>
-      
-    </header>
+    <header class="mb-12">
+        <!-- navbar starts -->
+         <nav>
+             <div class="navbar justify-between md:px-5 lg:px-10">
+                 <div class="">
+                   <div><img src="./assets/12.Better Pirganj.png" alt="logo of better pirganj" class="w-20 h-20"></div>
+                   <div>
+                     <h3 class="font-bold text-3xl hero-title hidden md:block">Better Pirganj</h3>
+                   </div>
+                 </div>
+                 <div class=" hidden lg:flex">
+                     <ul class="flex">
+                       <li><a href="" class="btn bg-transparent border-transparent text-reddis text-lg font-semibold hover:bg-gradient-to-tr from-beguni to-reddis hover:text-white mr-3">Home</a></li>
+                       <li><a href="" class="btn bg-transparent border-transparent text-reddis text-lg font-semibold hover:bg-gradient-to-tr from-beguni to-reddis hover:text-white mr-3">About Us</a></li>
+                       <li><a href="" class="btn bg-transparent border-transparent text-reddis text-lg font-semibold hover:bg-gradient-to-tr from-beguni to-reddis hover:text-white mr-3">Services</a></li>
+                       <li><a href="" class="btn bg-transparent border-transparent text-reddis text-lg font-semibold hover:bg-gradient-to-tr from-beguni to-reddis hover:text-white mr-3">Team</a></li>
+                       <li><a href="" class="btn bg-transparent border-transparent text-reddis text-lg font-semibold hover:bg-gradient-to-tr from-beguni to-reddis hover:text-white mr-3">Contact Us</a></li>
+                       
+                     </ul>
+                     
+                 </div>
+ 
+                 <div class="dropdown dropdown-bottom dropdown-end md:hidden">
+                     <div tabindex="0" role="button" class="btn m-1"><ion-icon name="reorder-four-outline" class="font-bolder text-2xl"></ion-icon></div>
+                     <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                       <li><a href="#" class="font-semibold">About Us</a></li>
+                       <li><a href="#" class="font-semibold">Services</a></li>
+                       <li><a href="#" class="font-semibold">Team</a></li>
+                       <li><a href="#" class="font-semibold">Contact Us</a></li>
+                     </ul>
+                   </div>
+                 
+               </div>
+         </nav>
+ 
+         <!-- hero section started -->
+          <div>
+             <img src="./assets/WhatsApp Image 2024-09-13 at 1.12.48 PM.jpeg" alt="" class="w-full">
+          </div>
+ 
+     </header>
 
-    <main>
+    <main class="max-w-screen-xl mx-auto px-3">
+        <!-- about us section -->
+        <section class="mb-20">
+            <div class="relative">
+              <h3 class="text-xl tracking-widder text-gray-600">About</h3>
+              <hr class="border-1 border-reddis w-48 absolute top-4 left-14">
+            </div>
+  
+            <p class="text-3xl font-bold tracking-wider mt-3">Who We Are</p>
+  
+            <div class="mt-14 grid grid-cols-1 md:grid-cols-2 gap-7">
+              <div>
+                  <p class="text-lg"><span class="text-xl">Better Pirganj</span> is a leading provider of cutting-edge information technology services and solutions, dedicated to empowering businesses with transformative digital capabilities. With a global presence and a track record of excellence, we specialize in delivering comprehensive IT solutions tailored to meet the evolving needs of our clients.</p>
+                  <p class="text-lg my-7">we are committed to delivering exceptional value through innovation, reliability, and customer-centricity. Our team of seasoned IT professionals combines technical expertise with industry experience to provide solutions that are both effective and forward-thinking. We pride ourselves on our ability to build long-term partnerships with our clients, ensuring their technology investments are aligned with their strategic goals.</p>
+                  <p class="text-lg">Our mission is to drive technological advancement and business success through innovative IT solutions and unparalleled customer service. We are dedicated to fostering a culture of excellence, integrity, and continuous improvement.</p>
+  
+              </div>
 
+              <div class="space-y-7 md:w-3/4 md:ml-24">
+                <div class="flex gap-10 items-center shadow-lg p-4 bg-gradient-to-r from-beguni to-komola text-white rounded-xl hover:bg-none hover:text-reddis">
+                  <ion-icon name="trending-up-outline" class="text-4xl border-2 rounded-full p-3"></ion-icon>
+                    <p class="text-xl pr-4">Tailored IT Solutions <br> for Every Business</p>
+                </div>
+
+                <div class="flex justify-around items-center shadow-lg p-4 bg-gradient-to-r from-beguni to-komola text-white rounded-xl hover:bg-none hover:text-reddis">
+                    <p class="text-xl pr-4">Cutting-Edge Technology <br> Integration</p>
+                    <ion-icon name="globe-outline" class="text-4xl  border-2 rounded-full p-3"></ion-icon>
+                </div>
+
+                <div class="flex gap-10 items-center shadow-lg p-4 bg-gradient-to-r from-beguni to-komola text-white rounded-xl hover:bg-none hover:text-reddis">
+                    <ion-icon name="git-compare-outline" class="text-4xl  border-2 rounded-full p-3"></ion-icon>
+                      <p class="text-xl pr-4">End-to-End Digital <br> Services</p>
+                </div>
+
+                  <div class="flex gap-4 items-center shadow-lg p-4 justify-around bg-gradient-to-r from-beguni to-komola text-white rounded-xl hover:bg-none hover:text-reddis">
+                        <p class="text-xl pr-4">Client-Centric Approach <br> with 24/7 Support</p>
+                        <ion-icon name="time-outline" class="text-4xl border-2 rounded-full p-3"></ion-icon>
+                </div>
+
+                
+              </div>
+  
+            </div> 
+         </section>
     </main>
 
     <footer>
